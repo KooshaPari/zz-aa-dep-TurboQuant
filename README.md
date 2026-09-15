@@ -1,3 +1,9 @@
+# zz-aa-dep
+
+Owned hard fork dependency for a project/product. zz prefix for readability/ordering. Code preserved.
+
+---
+
 # TurboQuant+
 
 > **🚀 TurboQuant KV cache compression is now in [vLLM](https://github.com/vllm-project/vllm)** ([PR #38479](https://github.com/vllm-project/vllm/pull/38479), merged April 2026): `--kv-cache-dtype turboquant_k8v4` and friends, with fused Triton store/decode kernels. The PR discussion drew on the asymmetric K/V findings from this repo. **Upstream llama.cpp has merged the core idea too**: Hadamard KV cache rotation ([#21038](https://github.com/ggml-org/llama.cpp/pull/21038), citing TurboQuant directly) with fast WHT kernels on CPU ([#22631](https://github.com/ggml-org/llama.cpp/pull/22631)), CUDA ([#23615](https://github.com/ggml-org/llama.cpp/pull/23615)), and Vulkan ([#23687](https://github.com/ggml-org/llama.cpp/pull/23687)). Rotation + the stock q4_0 cache is essentially turbo4's rotation stage; the PolarQuant codebook, norm extraction, and asymmetric policies remain here and in the fork.
